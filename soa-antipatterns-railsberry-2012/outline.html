@@ -1,0 +1,180 @@
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+<h1 id="soa-antipatterns">SOA AntiPatterns</h1>
+
+<h5 id="rantings-by">Rantings by&hellip;</h5>
+
+<h3 id="tammer-saleh">Tammer Saleh</h3>
+
+<h4 id="of-thunderbolt-labs">(&hellip;of Thunderbolt Labs)</h4>
+
+<h1 id="who-am-i">Who am I?</h1>
+
+<h2 id="tammer-saleh-1">Tammer Saleh</h2>
+
+<ul>
+  <li>Detected Earthquakes in Southern California</li>
+  <li>Wrote Hoptoad and Shoulda at Thoughtbot</li>
+  <li>Wrote Rails AntiPatterns</li>
+  <li>VP Engineering at Engine Yard</li>
+  <li>Cofounder of&hellip;</li>
+</ul>
+
+<h1 id="thunderbolt-labs">Thunderbolt Labs</h1>
+
+<p>[LOGO]</p>
+
+<h1 id="modern-soas">Modern SOAs</h1>
+
+<h2 id="forget-soap">Forget SOAP</h2>
+
+<p>[picture soap]</p>
+
+<h2 id="forget-layers">Forget Layers</h2>
+
+<p>[picture layer cake or marketecture diagram]</p>
+
+<p>Vertical separations are as common as horizontal.  It&rsquo;s about OOP.</p>
+
+<h1 id="oop-soa">OOP SOA</h1>
+
+<h3 id="the-best-techniques-from-object-oriented-programming-can-be-applied-to-soas">The best techniques from Object Oriented Programming can be applied to SOAs.</h3>
+
+<ul>
+  <li>
+    <p>Single responsibility </p>
+
+    <p>(Do only one thing, but do it well)</p>
+
+    <p>[swiss army knife]</p>
+  </li>
+  <li>
+    <p>Encapsulation </p>
+
+    <p>(Respect privacy)</p>
+  </li>
+  <li>
+    <p>Data abstraction </p>
+
+    <p>(All data should be passed in common formats)</p>
+  </li>
+</ul>
+
+<h2 id="caveat-in-soa-performance-is-immediately-important">Caveat! In SOA, performance is immediately important.</h2>
+
+<h1 id="antipatterns">AntiPatterns!</h1>
+
+<p>(You&rsquo;re doing it wrong.)</p>
+
+<p>[train wreck]</p>
+
+<h1 id="writing-internal-apis">Writing Internal APIs</h1>
+
+<p>[diagram internal api]</p>
+
+<h2 id="custom-wire-protocol">Custom wire protocol</h2>
+
+<p>Fear not-invented-here! Many strong and efficient protocols exist:</p>
+
+<ul>
+  <li>JSON</li>
+  <li>BSON</li>
+  <li>Protocol Buffers</li>
+  <li>BERT</li>
+  <li>MessagePack</li>
+</ul>
+
+<h2 id="we-dont-need-an-architecture--we-have-an-soa">We don&rsquo;t need an Architecture!  We have an SOA!</h2>
+
+<p>[ugly house]</p>
+
+<p>You cannot write an SOA without understanding the larger picture.  Each service needs to be viewed in relation to the overall system.  The system, in turn, needs to be viewed as a single entity.</p>
+
+<h2 id="tower-of-babel">Tower of Babel</h2>
+
+<p>[tower of babel]</p>
+
+<p>Each service is implemented in isolation, with different URL patterns, transport protocols, and failure modes.</p>
+
+<p>[orchestra]</p>
+
+<p>Ideally, each service uses the same language and framework underneath to facilitate massive code reuse and consistency.</p>
+
+<h2 id="centralized-db">Centralized DB</h2>
+
+<p>[diagram]</p>
+
+<p>Never violate another service&rsquo;s encapsulation.</p>
+
+<ul>
+  <li>Data integrity</li>
+  <li>Schema management nightmare</li>
+  <li>Scaling bottleneck</li>
+</ul>
+
+<h2 id="grand-central-api">Grand-central API</h2>
+
+<p>All of your services depend on a single central service to operate</p>
+
+<p>[diagram]</p>
+
+<h1 id="consuming-apis">Consuming APIs</h1>
+
+<p>[diagram api client]</p>
+
+<h1 id="testing">Testing</h1>
+
+<h2 id="lack-of-real-integration-tests">Lack of Real Integration Tests</h2>
+
+<p>An SOA must be viewed as a single system.  Tests that exercise the entire system at once are absolutely necessary.</p>
+
+<h2 id="each-consumer-is-responsible-for-mocking-each-service">Each consumer is responsible for mocking each service</h2>
+
+<p>A service should provide a trusted mock interface with the client-side gem.</p>
+
+<h1 id="performance">Performance</h1>
+
+<h2 id="lack-of-caching">Lack of caching</h2>
+
+<p>Even memoization makes a huge difference</p>
+
+<h2 id="serial-requests">Serial requests</h2>
+
+<p>[diagram]</p>
+
+<p>Replace with a Futures pattern </p>
+
+<p>(Celluloid)</p>
+
+<h2 id="in-line-requests">In-line requests</h2>
+
+<p>[diagram]</p>
+
+<p>Replace with either fire-and-forget or background processing.</p>
+
+<h2 id="rollercoaster-traffic-spikes">Rollercoaster traffic spikes</h2>
+
+<p>[diagram queue]</p>
+
+<p>Amortize traffic through use of queues.  Similar to fire and forget on client side.</p>
+
+<h1 id="reliability">Reliability</h1>
+
+<h2 id="tripwire-clients">Tripwire clients</h2>
+
+<p>OMG A SERVICE IS DOWN!!!?!</p>
+
+<h2 id="james-golic">James Golic</h2>
+
+<p>[jamesgolick]</p>
+
+<ul>
+  <li>Rollout</li>
+  <li>Degrade</li>
+</ul>
+
+<p>https://github.com/jamesgolick</p>
+
+<h2 id="chaos-monkey">Chaos Monkey</h2>
+
+<p>[chaos monkey]</p>
