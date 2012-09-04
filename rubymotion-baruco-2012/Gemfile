@@ -1,0 +1,9 @@
+source :rubygems
+
+gem "keydown"
+gem "guard"
+gem "kramdown"
+gem "guard-shell"
+gem "guard-bundler"
+gem "guard-livereload"
+
