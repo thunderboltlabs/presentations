@@ -12,4 +12,5 @@ end
 guard 'livereload' do
   watch("slides.html")
   watch(%r{css/.*})
+  watch(%r{js/.*})
 end

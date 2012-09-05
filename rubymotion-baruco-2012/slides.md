@@ -15,6 +15,34 @@
 
 }}}images/rubymotion.png
 
+!SLIDE center
+
+}}}images/tbl.png
+
+## WTF are you?
+
+### Tammer Saleh & Randall Thomas
+
+# Thunderbolt Labs
+
+!SLIDE intro
+
+# We're pretty damn good at a lot of stuff...
+
+* Whisk(e)y
+* UNIX
+* TDD
+* Ruby
+* Rails
+* RSpec
+* Drinking
+* Data Analysis
+* Agile
+
+!SLIDE intro
+
+# But we are _not_ iOS experts
+
 !SLIDE intro
 
 ## The Why
@@ -67,13 +95,17 @@
 
 #### (sorta)
 
-## Code in Vim and drive with Rake
-
 !SLIDE bottom-left
 
 # Ethos of the Ruby Community
 
 }}} images/indiana_jones.jpg
+
+!SLIDE bottom-left
+
+}}} images/vim.jpg
+
+## Code in Vim and drive with Rake
 
 !SLIDE main-section
 

@@ -31,3 +31,6 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center center !important;
 }
 
+section.slide.center * {
+  text-align: center;
+}
