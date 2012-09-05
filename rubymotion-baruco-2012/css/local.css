@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/webfont.woff') format('woff'),
+       url('fonts/webfont.ttf')  format('truetype');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway" !important;
+}
+
+/* section.slide.tiny * { */
+/*   font-size:  93% !important; */
+/* } */
+
+.main-section h1 {
+  /* font-size: 300%; */
+}
+
+.deck-prev-link, .deck-next-link {
+    display: none !important;
+}
+
+/* Uncomment to turn off deck.js status */
+/*.deck-status {*/
+    /*display: none;*/
+/*}*/
+
+.full-background {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+

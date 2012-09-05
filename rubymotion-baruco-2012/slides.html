@@ -16,42 +16,80 @@
     <link href="deck.js/extensions/status/deck.status.css" rel="stylesheet" type="text/css"/>
     <!-- all css in the css dir: Keydown CSS, your custom CSS, and themes from deck.js -->
     <link href="css/keydown.css" rel="stylesheet" type="text/css"/>
-    <link href="css/default.css" rel="stylesheet" type="text/css"/>
-    <link href="css/horizontal-slide.css" rel="stylesheet" type="text/css"/>
-    <link href="css/swiss.css" rel="stylesheet" type="text/css"/>
+    <link href="css/code.css" rel="stylesheet" type="text/css"/>
+    <link href="css/fade.css" rel="stylesheet" type="text/css"/>
+    <link href="css/local.css" rel="stylesheet" type="text/css"/>
+    <link href="css/theme.css" rel="stylesheet" type="text/css"/>
     <!-- Modernizr (provided for legacy browsers) -->
     <script src="deck.js/support/modernizr.custom.js" type="text/javascript"></script>
   </head>
   <body class='deck-container keydown'>
-    <section class='slide'>
+    <section class='intro slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>h1</h1>
+        
+        <h2>h2</h2>
+        
+        <h3>h3</h3>
+        
+        <h4>h4</h4>
+        
+        <h5>h5</h5>
+        
+        <h6>h6</h6>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='full-background intro rubymotion slide'>
       <div class='spacer top'></div>
       <div class='content'>
         <h1>RubyMotion in Practice</h1>
       </div>
       <div class='spacer bottom'></div>
     </section>
-    <section class='slide'>
-  <div class='spacer top'></div>
-  <div class='content'>
-    <h2>The Why</h2>
-
-<h2>The Code</h2>
-
-<h2>The Pain</h2>
-  </div>
-  <div class='spacer bottom'></div>
-</section>
-    <section class='slide'>
+    <section class='intro slide'>
       <div class='spacer top'></div>
       <div class='content'>
         <h2>The Why</h2>
+        
+        <h2>The Beauty</h2>
+        
+        <h2>The Pain</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='main-section slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>The Why</h1>
       </div>
       <div class='spacer bottom'></div>
     </section>
     <section class='slide'>
   <div class='spacer top'></div>
   <div class='content'>
-    <h3>Expressiveness of Ruby</h3>
+    <h1>Expressiveness of Ruby</h1>
+
+<h3>Rather: The Ugliness of Obj-C</h3>
+
+<p><textarea class='code' display='none' mode='objective_c'>[[[Foo alloc] initWithBar:bar andBaz:baz] autorelease]&#x000A;&#x000A;[self performSelector:@selector(mytest:withAString:) withObject: mystring];</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide tiny'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <p><textarea class='code' display='none' mode='objective_c'>- (UITableViewCell *)tableView:(UITableView *)tableView &#x000A;                               cellForRowAtIndexPath:(NSIndexPath *)indexPath &#x000A;{&#x000A;  UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];&#x000A;  if (cell == nil) &#x000A;  {&#x000A;    cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero &#x000A;                                     reuseIdentifier:@"MyIdentifier"] &#x000A;            autorelease];&#x000A;  }&#x000A;  NSDictionary *itemAtIndex = (NSDictionary *)[menuList objectAtIndex:indexPath.row];&#x000A;  cell.text = [itemAtIndex objectForKey:@"option"];&#x000A;  return cell;&#x000A;}</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='full-background slide text_from_xcode'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    
   </div>
   <div class='spacer bottom'></div>
 </section>
@@ -60,14 +98,9 @@
   <div class='content'>
     <h1>No more XCode</h1>
 
-<h2>(sorta)</h2>
-  </div>
-  <div class='spacer bottom'></div>
-</section>
-    <section class='slide'>
-  <div class='spacer top'></div>
-  <div class='content'>
-    <p>images/text_from_xcode.png</p>
+<h4>(sorta)</h4>
+
+<h2>Code in Vim and drive with Rake</h2>
   </div>
   <div class='spacer bottom'></div>
 </section>
@@ -78,24 +111,69 @@
       </div>
       <div class='spacer bottom'></div>
     </section>
+    <section class='main-section slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h1>The Code</h1>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
     <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h2>Examples</h2>
+        <h2>Getting Started</h2>
       </div>
       <div class='spacer bottom'></div>
     </section>
+    <section class='left slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <p><textarea class='code' display='none' mode='shell'>$ motion create sample&#x000A;    Create sample&#x000A;    Create sample/.gitignore&#x000A;    Create sample/Rakefile&#x000A;    Create sample/app&#x000A;    Create sample/app/app_delegate.rb&#x000A;    Create sample/resources&#x000A;    Create sample/spec&#x000A;    Create sample/spec/main_spec.rb</textarea>
+</p>
+    
+    <p><textarea class='code' display='none' mode='ruby'># app/app_delegate.rb &#x000A;class AppDelegate&#x000A;  def application(application, didFinishLaunchingWithOptions:launchOptions)&#x000A;    true&#x000A;  end&#x000A;end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
     <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>MacRuby</h2>
+    
+    <p><textarea class='code' display='none' mode='ruby'>def mapView(map_view, regionDidChangeAnimated:animated)&#x000A;  # ...&#x000A;end</textarea>
+</p>
+    
+    <p>...is a single selector, and gets compiled into:</p>
+    
+    <p><textarea class='code' display='none' mode='objective_c'>-(void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated&#x000A;{&#x000A;  //...&#x000A;}</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>MacRuby</h2>
+    
+    <p>This means</p>
+    
+    <p><textarea class='code' display='none' mode='ruby'>mapView(map_view, regionDidChangeAnimated:animated)</textarea>
+</p>
+    
+    <p>and</p>
+    
+    <p><textarea class='code' display='none' mode='ruby'>mapView(map_view, regionWillChangeAnimated:animated)</textarea>
+</p>
+    
+    <p>...are different methods.</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='bottom-left full-background slide storyboard'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h3>Simple app</h3>
-      </div>
-      <div class='spacer bottom'></div>
-    </section>
-    <section class='slide'>
-      <div class='spacer top'></div>
-      <div class='content'>
-        <h4>Storyboards</h4>
+        <h1>Storyboards</h1>
       </div>
       <div class='spacer bottom'></div>
     </section>
@@ -127,10 +205,10 @@
       </div>
       <div class='spacer bottom'></div>
     </section>
-    <section class='slide'>
+    <section class='main-section slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h2>The Bad</h2>
+        <h2>The Pain</h2>
       </div>
       <div class='spacer bottom'></div>
     </section>
@@ -204,7 +282,7 @@ wrong number of arguments (-1339225320 for 0)
     <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h4>Using storyboards</h4>
+        <h4>Accessing views in storyboards</h4>
       </div>
       <div class='spacer bottom'></div>
     </section>
@@ -262,6 +340,7 @@ wrong number of arguments (-1339225320 for 0)
     <script src="deck.js/extensions/scale/deck.scale.js" type="text/javascript"></script>
     <script src="deck.js/extensions/status/deck.status.js" type="text/javascript"></script>
     <!-- your custom JS here, including call to initialize deck.js-codemirror -->
+    <script src="js/local.js" type="text/javascript"></script>
     <!-- Initialize the deck. -->
     <script type='text/javascript'>
       $(function() { $.deck('.slide'); });
