@@ -82,6 +82,16 @@ Ruby, C++, Whisk(e)y, UNIX, TDD, ADD, Pool, Rails, Git, Earthquakes, Guns, Spec,
 
 !SLIDE bottom-left
 
+}}} images/emacs.png
+
+!SLIDE bottom-left
+
+# (just kidding)
+
+}}} images/emacs.png
+
+!SLIDE bottom-left
+
 }}} images/vim.jpg
 
 # Code in Vim and drive with Rake

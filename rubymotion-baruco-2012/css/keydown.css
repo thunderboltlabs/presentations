@@ -108,6 +108,10 @@ body {
         background-image: url(../images/rubymotion.png); }
       .keydown.deck-container .slide.full-background.text_from_xcode {
         background-image: url(../images/text_from_xcode.png); }
+      .keydown.deck-container .slide.full-background.emacs {
+        background-image: url(../images/emacs.png); }
+      .keydown.deck-container .slide.full-background.emacs {
+        background-image: url(../images/emacs.png); }
       .keydown.deck-container .slide.full-background.vim {
         background-image: url(../images/vim.jpg); }
       .keydown.deck-container .slide.full-background.indiana_jones {
