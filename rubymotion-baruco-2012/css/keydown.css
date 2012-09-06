@@ -106,16 +106,18 @@ body {
       box-pack: start; }
       .keydown.deck-container .slide.full-background.rubymotion {
         background-image: url(../images/rubymotion.png); }
-      .keydown.deck-container .slide.full-background.tbl {
-        background-image: url(../images/tbl.png); }
       .keydown.deck-container .slide.full-background.text_from_xcode {
         background-image: url(../images/text_from_xcode.png); }
-      .keydown.deck-container .slide.full-background.indiana_jones {
-        background-image: url(../images/indiana_jones.jpg); }
       .keydown.deck-container .slide.full-background.vim {
         background-image: url(../images/vim.jpg); }
+      .keydown.deck-container .slide.full-background.indiana_jones {
+        background-image: url(../images/indiana_jones.jpg); }
       .keydown.deck-container .slide.full-background.storyboard {
         background-image: url(../images/storyboard.jpg); }
+      .keydown.deck-container .slide.full-background.storyboard_tag {
+        background-image: url(../images/storyboard_tag.jpg); }
+      .keydown.deck-container .slide.full-background.sand_castle {
+        background-image: url(../images/sand_castle.jpg); }
       .keydown.deck-container .slide.full-background h1 {
         display: inline;
         position: absolute;

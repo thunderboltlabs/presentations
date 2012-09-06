@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .deck-prev-link, .deck-next-link {
-    display: none !important;
+  display: none !important;
 }
 
 /* Uncomment to turn off deck.js status */
@@ -25,12 +25,48 @@ h1, h2, h3, h4, h5, h6 {
     /*display: none;*/
 /*}*/
 
-.full-background {
+
+section.slide.full-background {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
 }
 
-section.slide.center * {
+section.slide.logo {
+  background-image: url(../images/tbl.png);
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain;
   text-align: center;
 }
+
+section.slide.trollface {
+  background-image: url(../images/trollface.jpg);
+  background-repeat: no-repeat !important;
+  background-position: bottom right !important;
+  background-size: 50%;
+  text-align: center;
+}
+
+section.slide.apple_evil {
+  background-image: url(../images/apple_evil.png);
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+section.slide.apple_evil * {
+  color: white !important;
+  float: left;
+  text-align: left !important;
+}
+
+section.slide.sand_castle {
+  background-size: cover !important;
+}
+
+/* .logo h1 { */
+/*   background-color: rgba(0, 0, 0, 0.7); */
+/*   padding: 1rem !important; */
+/*   color: #eee !important; */
+/* } */

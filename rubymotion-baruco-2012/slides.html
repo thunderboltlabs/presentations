@@ -24,23 +24,6 @@
     <script src="deck.js/support/modernizr.custom.js" type="text/javascript"></script>
   </head>
   <body class='deck-container keydown'>
-    <section class='intro slide'>
-      <div class='spacer top'></div>
-      <div class='content'>
-        <h1>h1</h1>
-        
-        <h2>h2</h2>
-        
-        <h3>h3</h3>
-        
-        <h4>h4</h4>
-        
-        <h5>h5</h5>
-        
-        <h6>h6</h6>
-      </div>
-      <div class='spacer bottom'></div>
-    </section>
     <section class='full-background intro rubymotion slide'>
       <div class='spacer top'></div>
       <div class='content'>
@@ -48,33 +31,30 @@
       </div>
       <div class='spacer bottom'></div>
     </section>
-    <section class='center full-background slide tbl'>
+    <section class='logo slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h2>WTF are you?</h2>
-        
-        <h3>Tammer Saleh &amp; Randall Thomas</h3>
-        
         <h1>Thunderbolt Labs</h1>
+        
+        <h4>Tammer Saleh &amp; Randall Thomas</h4>
       </div>
       <div class='spacer bottom'></div>
     </section>
-    <section class='intro slide'>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Please interrupt us.</h1>
+        
+        <h4>(We get bored up here)</h4>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
   <div class='spacer top'></div>
   <div class='content'>
     <h1>We're pretty damn good at a lot of stuff...</h1>
 
-<ul>
-<li>Whisk(e)y</li>
-<li>UNIX</li>
-<li>TDD</li>
-<li>Ruby</li>
-<li>Rails</li>
-<li>RSpec</li>
-<li>Drinking</li>
-<li>Data Analysis</li>
-<li>Agile</li>
-</ul>
+<p>Ruby, C++, Whisk(e)y, UNIX, TDD, ADD, Pool, Rails, Git, Earthquakes, Guns, Spec, Drinking, Neural Nets, Math, Statistics (51% of the time), Data, Agile, Clojure, SOAs, Site downtime, REST</p>
   </div>
   <div class='spacer bottom'></div>
 </section>
@@ -139,6 +119,13 @@
   </div>
   <div class='spacer bottom'></div>
 </section>
+    <section class='bottom-left full-background slide vim'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h1>Code in Vim and drive with Rake</h1>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
     <section class='bottom-left full-background indiana_jones slide'>
       <div class='spacer top'></div>
       <div class='content'>
@@ -146,13 +133,6 @@
       </div>
       <div class='spacer bottom'></div>
     </section>
-    <section class='bottom-left full-background slide vim'>
-  <div class='spacer top'></div>
-  <div class='content'>
-    <h2>Code in Vim and drive with Rake</h2>
-  </div>
-  <div class='spacer bottom'></div>
-</section>
     <section class='main-section slide'>
   <div class='spacer top'></div>
   <div class='content'>
@@ -173,7 +153,10 @@
     <p><textarea class='code' display='none' mode='shell'>$ motion create sample&#x000A;    Create sample&#x000A;    Create sample/.gitignore&#x000A;    Create sample/Rakefile&#x000A;    Create sample/app&#x000A;    Create sample/app/app_delegate.rb&#x000A;    Create sample/resources&#x000A;    Create sample/spec&#x000A;    Create sample/spec/main_spec.rb</textarea>
 </p>
     
-    <p><textarea class='code' display='none' mode='ruby'># app/app_delegate.rb &#x000A;class AppDelegate&#x000A;  def application(application, didFinishLaunchingWithOptions:launchOptions)&#x000A;    true&#x000A;  end&#x000A;end</textarea>
+    <p><textarea class='code' display='none' mode='ruby'>class AppDelegate&#x000A;  def application(application, didFinishLaunchingWithOptions:launchOptions)&#x000A;    true&#x000A;  end&#x000A;end</textarea>
+</p>
+    
+    <p><textarea class='code' display='none' mode='shell'>$ rake&#x000A;     Build ./build/iPhoneSimulator-5.1-Development&#x000A;     Build vendor/TestFlight&#x000A;     Build vendor/Pods&#x000A;      Link ./build/iPhoneSimulator-5.1-Development/ArtInMyCoffee.app/ArtInMyCoffee&#x000A;     ...</textarea>
 </p>
   </div>
   <div class='spacer bottom'></div>
@@ -186,9 +169,34 @@
     <p><textarea class='code' display='none' mode='ruby'>def mapView(map_view, regionDidChangeAnimated:animated)&#x000A;  # ...&#x000A;end</textarea>
 </p>
     
-    <p>...is a single selector, and gets compiled into:</p>
+    <p>is the method (selector): <strong>mapView:regionDidChangeAnimated:</strong></p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>MacRuby</h2>
+    
+    <p><textarea class='code' display='none' mode='ruby'>def mapView(map_view, regionDidChangeAnimated:animated)&#x000A;  # ...&#x000A;end</textarea>
+</p>
     
     <p><textarea class='code' display='none' mode='objective_c'>-(void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated&#x000A;{&#x000A;  //...&#x000A;}</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>MacRuby</h2>
+    
+    <p><textarea class='code' display='none' mode='ruby'>def mapView(map_view, regionDidChangeAnimated:animated)&#x000A;  # ...&#x000A;end</textarea>
+</p>
+    
+    <p>is <strong>not</strong>:</p>
+    
+    <p><textarea class='code' display='none' mode='ruby'>def mapView(map_view, opts = {})&#x000A;  animated = opts[:regionDidChangeAnimated]&#x000A;  # ...&#x000A;end</textarea>
 </p>
   </div>
   <div class='spacer bottom'></div>
@@ -220,30 +228,178 @@
       <div class='spacer bottom'></div>
     </section>
     <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Configure</h2>
+    
+    <p><textarea class='code' display='none' mode='shell'>$ ls resources/&#x000A;MyApp.storyboard</textarea>
+</p>
+    
+    <p><textarea class='code' display='none' mode='ruby'># Rakefile&#x000A;Motion::Project::App.setup do |app|&#x000A;  app.info_plist["UIMainStoryboardFile"] = "MyApp"</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='bottom-left full-background slide storyboard_tag'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h4>RestKit</h4>
+        <h2>Use</h2>
       </div>
       <div class='spacer bottom'></div>
     </section>
     <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Use</h2>
+    
+    <p><textarea class='code' display='none' mode='ruby'>class LoginViewController < UIViewController&#x000A;  def email_text_field&#x000A;    @email_text_field ||= view.viewWithTag(1)&#x000A;  end&#x000A;&#x000A;  def password_text_field&#x000A;    @password_text_field ||= view.viewWithTag(2)&#x000A;  end&#x000A;&#x000A;  def button&#x000A;    @button ||= view.viewWithTag(3)&#x000A;  end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h1>Cocoapods</h1>
+    
+    <p>gem "motion-cocoapods"</p>
+    
+    <p><textarea class='code' display='none' mode='ruby'>Motion::Project::App.setup do |app|&#x000A;  app.pods do&#x000A;    pod "RestKit"&#x000A;    pod "cocos2d"&#x000A;  end</textarea>
+</p>
+    
+    <h3>https://github.com/CocoaPods/Specs</h3>
+    
+    <h2>Over 450 Pods and Counting</h2>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h3>iOS Patterns in Ruby</h3>
+        <h1>iOS Patterns in Ruby</h1>
       </div>
       <div class='spacer bottom'></div>
     </section>
     <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h1>MapView</h1>
+    
+    <p><textarea class='code' display='none' mode='ruby'>class MapViewController < UIViewController&#x000A;  def viewDidLoad&#x000A;    # load annotations using map.addAnnotation(object)&#x000A;  end&#x000A;&#x000A;  def map&#x000A;    @map ||= view.viewWithTag(1)&#x000A;  end&#x000A;&#x000A;  def mapView(mapView, viewForAnnotation: annotation)&#x000A;    if view = mapView.dequeueReusableAnnotationViewWithIdentifier("ViewIdentifier")&#x000A;      view.annotation = annotation&#x000A;    else&#x000A;      view = MKPinAnnotationView.alloc.initWithAnnotation(annotation, &#x000A;                                                          reuseIdentifier:"ViewIdentifier")&#x000A;      ...&#x000A;    end&#x000A;    return view &#x000A;  end&#x000A;end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h4>TableViewController</h4>
+    
+    <p><textarea class='code' display='none' mode='ruby'>class CoffeeShopSelectController < UITableViewController&#x000A;  def viewDidLoad&#x000A;    view.dataSource = self # I'm the delegate for data&#x000A;    view.delegate   = self # I'm the delegate for rendering&#x000A;    @coffee_shops = [...]&#x000A;  end&#x000A;&#x000A;  def tableView(tableView, numberOfRowsInSection:section)&#x000A;    @coffee_shops.size&#x000A;  end&#x000A;&#x000A;  def tableView(tableView, cellForRowAtIndexPath:indexPath)&#x000A;    cell = tableView.dequeueReusableCellWithIdentifier("CoffeeShopCell") || begin&#x000A;      CoffeeShopCell.alloc.initWithStyle(UITableViewCellStyleDefault, &#x000A;                                         reuseIdentifier:"CoffeeShopCell")&#x000A;    end&#x000A;&#x000A;    cell.coffee_shop = @coffee_shops[indexPath.row]&#x000A;    return cell&#x000A;  end&#x000A;end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Instance reuse</h2>
+    
+    <p><textarea class='code' display='none' mode='ruby'>def tableView(tableView, cellForRowAtIndexPath:indexPath)&#x000A;  # Try to grab an old instance and reuse it...&#x000A;  cell = tableView.dequeueReusableCellWithIdentifier("CoffeeShopCell") || begin&#x000A;    # Only create a new one if we have to...&#x000A;    CoffeeShopCell.alloc.initWithStyle(UITableViewCellStyleDefault, &#x000A;                                       reuseIdentifier:"CoffeeShopCell")&#x000A;  end&#x000A;&#x000A;  cell.coffee_shop = @coffee_shops[indexPath.row]&#x000A;  return cell&#x000A;end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Delegation</h2>
+    
+    <p><textarea class='code' display='none' mode='ruby'>class CoffeeShopSelectController < UITableViewController&#x000A;  def viewDidLoad&#x000A;    view.delegate   = self # I'm the main delegate for rendering&#x000A;    view.dataSource = self # I'm the delegate for data&#x000A;  end&#x000A;&#x000A;  def tableView(tableView, numberOfRowsInSection:section)&#x000A;    # sent to dataSource delegate&#x000A;    ...&#x000A;  end&#x000A;&#x000A;  def tableView(tableView, cellForRowAtIndexPath:indexPath)&#x000A;    # sent to main delegate&#x000A;    ...&#x000A;  end&#x000A;end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h4>MapView</h4>
+        <h1>RestKit</h1>
+        
+        <h2>Maps JSON keys to your models</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <ol>
+        <li>Write a PORO model</li>
+        <li>Tell RestKit what JSON to map</li>
+        <li>Get an arbitrary URL</li>
+        <li>Returns your models like magic</li>
+        </ol>
+        
+        
+        <h4>http://bit.ly/rubymotion-restkit</h4>
       </div>
       <div class='spacer bottom'></div>
     </section>
     <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>Write a PORO model</h3>
+    
+    <p><textarea class='code' display='none' mode='ruby'>class CoffeeShop&#x000A;  attr_accessor :id,&#x000A;                :latitude,&#x000A;                :longitude,&#x000A;                :name,&#x000A;                :shot_count,&#x000A;                :created_at,&#x000A;                :updated_at&#x000A;end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>Tell RestKit what JSON to map</h3>
+    
+    <p><textarea class='code' display='none' mode='json'>{&#x000A;  "coffee_shops": [&#x000A;    {&#x000A;      "id": 1,&#x000A;      "name": "Blue Bottle",&#x000A;      "latitude": "20.0",&#x000A;      "longitude": "-122.4075",&#x000A;      "shot_count": 4&#x000A;    },&#x000A;    ...&#x000A;  ]&#x000A;}</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>Tell RestKit what JSON to map</h3>
+    
+    <p><textarea class='code' display='none' mode='ruby'>def coffee_shop_mapping&#x000A;  mapping = RKObjectMapping.mappingForClass(CoffeeShop)&#x000A;  mapping.mapKeyPath("id",         toAttribute: "id")&#x000A;  mapping.mapKeyPath("latitude",   toAttribute: "latitude")&#x000A;  mapping.mapKeyPath("longitude",  toAttribute: "longitude")&#x000A;  mapping.mapKeyPath("name",       toAttribute: "name")&#x000A;  mapping.mapKeyPath("shot_count", toAttribute: "shot_count")&#x000A;  mapping.mapKeyPath("created_at", toAttribute: "created_at")&#x000A;  mapping.mapKeyPath("updated_at", toAttribute: "updated_at")&#x000A;  return mapping&#x000A;end&#x000A;&#x000A;restkit_object_manager.mappingProvider.setMapping(coffee_shop_mapping, &#x000A;                                                  forKeyPath:"coffee_shops")</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>Get an arbitrary URL</h3>
+    
+    <p><textarea class='code' display='none' mode='ruby'>class CoffeeShopSelectController < UITableViewController&#x000A;  def viewDidLoad&#x000A;    object_manager = RKObjectManager.objectManagerWithBaseURLString(base_url)&#x000A;    object_manager.delegate = self&#x000A;    object_manager.get("/coffee_shops", self)&#x000A;  end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>Returns your models like magic</h3>
+    
+    <p><textarea class='code' display='none' mode='ruby'>class CoffeeShopSelectController < UITableViewController&#x000A;  ...&#x000A;  def objectLoader(object_loader, didLoadObjects:coffee_shops)&#x000A;    add_coffee_shops(coffee_shops)&#x000A;  end&#x000A;&#x000A;  def objectLoader(object_loader, didFailWithError:error)&#x000A;    log "Error: #{error.inspect}"&#x000A;  end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h4>TableViewController</h4>
+        <p>The big question...</p>
+        
+        <h1>Is it worth it?</h1>
       </div>
       <div class='spacer bottom'></div>
     </section>
@@ -257,11 +413,30 @@
     <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
+        <h1>Say goodbye to Ruby Gems</h1>
+        
+        <h3>No #require, #send, #eval...</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>"useless" memoization to work around ARC bugs</h2>
+    
+    <p><textarea class='code' display='none' mode='ruby'>def email_text_field&#x000A;  @email_text_field ||= view.viewWithTag(1)&#x000A;end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
         <h1>Strange bugs</h1>
       </div>
       <div class='spacer bottom'></div>
     </section>
-    <section class='left slide'>
+    <section class='left slide trollface'>
   <div class='spacer top'></div>
   <div class='content'>
     <p><code>
@@ -279,59 +454,71 @@ wrong number of arguments (-1339225320 for 0)
     <section class='slide'>
   <div class='spacer top'></div>
   <div class='content'>
-    <h4>Strange GC issues</h4>
-    
     <p><textarea class='code' display='none' mode='ruby'>(#<UIRoundedRectButton:0xa194dd...)> MyApp(15862,0xacac8a28) malloc:&#x000A;*** error for object 0xa19f2f4: &#x000A;  incorrect checksum for freed object - &#x000A;  object was probably modified after being freed.&#x000A;*** set a breakpoint in malloc_error_break to debug</textarea>
 </p>
   </div>
   <div class='spacer bottom'></div>
 </section>
     <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>...And just today...</h3>
+    
+    <p><textarea class='code' display='none' mode='shell'>$ rake&#x000A;     Build ./build/iPhoneSimulator-5.1-Development&#x000A;     Build vendor/TestFlight&#x000A;     Build vendor/Pods&#x000A;      Link ./build/iPhoneSimulator-5.1-Development/ArtInMyCoffee.app/ArtInMyCoffee&#x000A;Undefined symbols for architecture i386:&#x000A;  "_NSDeletedObjectsKey", referenced from:&#x000A;      -[RKForm reloadObjectOnContextDidSaveNotification:] in libPods.a(RKForm.o)&#x000A;      ... 40 lines of crap...&#x000A;      _OBJC_METACLASS_$_RKSearchWord in libPods.a(RKSearchWord.o)&#x000A;ld: symbol(s) not found for architecture i386&#x000A;clang: error: linker command failed with exit code 1 (use -v to see invocation)&#x000A;rake aborted!&#x000A;Command failed with status (1): [/Applications/Xcode.app/Contents/Developer...]&#x000A;Tasks: TOP => default => simulator => build:simulator&#x000A;(See full trace by running task with --trace)</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Accessing views in storyboards</h2>
+    
+    <p><textarea class='code' display='none' mode='ruby'>def email_text_field&#x000A;  @email_text_field ||= view.viewWithTag(1)&#x000A;end</textarea>
+</p>
+    
+    <h3>Manual and brittle</h3>
+    
+    <h5>"ib" gem can help</h5>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h3>Cargo Culting</h3>
+        <h1>Lack of deep debugging tools</h1>
       </div>
       <div class='spacer bottom'></div>
     </section>
     <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h4>"useless" memoization to work around ARC bugs</h4>
+        <h1>TDD on RubyMotion suuuucks</h1>
       </div>
       <div class='spacer bottom'></div>
     </section>
-    <section class='slide'>
-      <div class='spacer top'></div>
-      <div class='content'>
-        <h4>RestKit Mapper calls</h4>
-      </div>
-      <div class='spacer bottom'></div>
-    </section>
-    <section class='slide'>
-      <div class='spacer top'></div>
-      <div class='content'>
-        <h3>Swimming Up Stream</h3>
-      </div>
-      <div class='spacer bottom'></div>
-    </section>
-    <section class='slide'>
-      <div class='spacer top'></div>
-      <div class='content'>
-        <h4>Translating obj-c to ruby</h4>
-      </div>
-      <div class='spacer bottom'></div>
-    </section>
-    <section class='slide'>
-      <div class='spacer top'></div>
-      <div class='content'>
-        <h4>Accessing views in storyboards</h4>
-      </div>
-      <div class='spacer bottom'></div>
-    </section>
-    <section class='slide'>
+    <section class='apple_evil slide'>
       <div class='spacer top'></div>
       <div class='content'>
         
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='full-background sand_castle slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Production vs. Hobby</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='logo slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Questions?</h1>
+        
+        <h4>@thunderboltlabs</h4>
+        
+        <h4>http://thunderboltlabs.com</h4>
       </div>
       <div class='spacer bottom'></div>
     </section>
