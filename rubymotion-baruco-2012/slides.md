@@ -1,6 +1,6 @@
 # RubyMotion in Practice
 
-!SLIDE intro
+!SLIDE intro center
 
 # RubyMotion in Practice
 
@@ -70,7 +70,7 @@ Ruby, C++, Whisk(e)y, UNIX, TDD, ADD, Pool, Rails, Git, Earthquakes, Guns, Spec,
 ```
 
 
-!SLIDE
+!SLIDE center
 
 }}} images/text_from_xcode.png
 
@@ -80,11 +80,11 @@ Ruby, C++, Whisk(e)y, UNIX, TDD, ADD, Pool, Rails, Git, Earthquakes, Guns, Spec,
 
 #### (sorta)
 
-!SLIDE bottom-left
+!SLIDE
 
 }}} images/emacs.png
 
-!SLIDE bottom-left
+!SLIDE center
 
 # (just kidding)
 
