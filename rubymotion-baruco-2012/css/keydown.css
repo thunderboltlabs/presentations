@@ -120,6 +120,8 @@ body {
         background-image: url(../images/storyboard.jpg); }
       .keydown.deck-container .slide.full-background.storyboard_tag {
         background-image: url(../images/storyboard_tag.jpg); }
+      .keydown.deck-container .slide.full-background.huge_library {
+        background-image: url(../images/huge_library.jpg); }
       .keydown.deck-container .slide.full-background.sand_castle {
         background-image: url(../images/sand_castle.jpg); }
       .keydown.deck-container .slide.full-background h1 {

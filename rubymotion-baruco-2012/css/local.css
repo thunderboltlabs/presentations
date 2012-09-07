@@ -61,7 +61,7 @@ section.slide.apple_evil * {
   text-align: left !important;
 }
 
-section.slide.sand_castle {
+section.slide.sand_castle, section.slide.huge_library {
   background-size: cover !important;
 }
 
@@ -70,3 +70,16 @@ section.slide.sand_castle {
 /*   padding: 1rem !important; */
 /*   color: #eee !important; */
 /* } */
+
+section.slide.center.full-background {
+  padding: 0 !important;
+}
+
+section.slide.center.full-background h1 {
+  display: block !important;
+  margin: 30% 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  text-align: center;
+}
+

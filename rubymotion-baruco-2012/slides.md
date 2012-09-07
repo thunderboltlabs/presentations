@@ -565,9 +565,21 @@ end
 
 # TDD on RubyMotion suuuucks
 
-!SLIDE apple_evil
+!SLIDE center
+
+# Cocoa is Huge
+
+}}} images/huge_library.jpg
 
 !SLIDE
+
+# Closed Source
+
+![closed](images/closed.jpg)
+
+!SLIDE apple_evil
+
+!SLIDE center
 
 # Production vs. Hobby
 
