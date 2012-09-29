@@ -1,53 +1,14 @@
 # RubyMotion in Practice
 
-## The Good
+## BaRuCo 2012
 
-### Expressiveness of Ruby
+### Tammer Saleh & Randall Thomas
 
-### No more XCode (sorta)
+## Running
 
-### Ethos of the Ruby Community
+If you just want to view the slides, they're in `slides.html`.  If you want to recreate them, then:
+(Note: Requires the Railway font)
 
-[Picture of Indiana Jones]
-
-## Examples
-
-### Simple app
-
-#### Storyboards
-
-#### RestKit
-
-### iOS Patterns in Ruby
-
-#### MapView
-
-#### TableViewController
-
-## The Bad
-
-### Strange bugs
-
-#### Airity bug
-
-#### Strange GC issues
-
-{: lang=ruby}
-    (#<UIRoundedRectButton:0xa194dd...)> MyApp(15862,0xacac8a28) malloc:
-    *** error for object 0xa19f2f4: 
-      incorrect checksum for freed object - 
-      object was probably modified after being freed.
-    *** set a breakpoint in malloc_error_break to debug
-
-### Cargo Culting
-
-#### "useless" memoization to work around ARC bugs
-
-#### RestKit Mapper calls
-
-### Swimming Up Stream
-
-#### Translating obj-c to ruby
-
-#### Using storyboards
+1. `bundle install`
+2. `guard` ...or...  `keydown slides slides.md`
 
