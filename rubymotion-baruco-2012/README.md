@@ -11,3 +11,5 @@ If you just want to view the slides, they're in `slides.html`.  If you want to r
 
 #### Note: For maximum viewing pleasure, install the free [Railway font](http://www.theleagueofmoveabletype.com/raleway).
 
+![Railway preview](http://www.theleagueofmoveabletype.com/raleway/images/raleway-1.jpeg)
+
