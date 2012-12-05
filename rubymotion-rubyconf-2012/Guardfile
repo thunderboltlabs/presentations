@@ -1,0 +1,16 @@
+guard 'shell', all_on_start: true do
+  watch("slides.md") do
+    `keydown slides slides.md`
+    "converted slides.md"
+  end
+end
+
+guard 'bundler' do
+  watch('Gemfile')
+end
+
+guard 'livereload' do
+  watch("slides.html")
+  watch(%r{css/.*})
+  watch(%r{js/.*})
+end

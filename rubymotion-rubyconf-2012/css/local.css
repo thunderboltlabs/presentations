@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/webfont.woff') format('woff'),
+       url('fonts/webfont.ttf')  format('truetype');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway" !important;
+}
+
+body {
+  -webkit-transform: none !important;
+}
+
+section.slide.tiny .CodeMirror * {
+  font-size:  98% !important;
+}
+
+.main-section {
+  background: black !important;
+}
+
+.title {
+  background: orange !important;
+}
+
+.main-section h1 {
+  color: white !important;
+}
+
+.deck-prev-link, .deck-next-link {
+  display: none !important;
+}
+
+/* Uncomment to turn off deck.js status */
+/*.deck-status {*/
+    /*display: none;*/
+/*}*/
+
+
+section.slide.full-background {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+section.slide.logo {
+  background-image: url(../images/tbl.png);
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain;
+  text-align: center;
+}
+
+section.slide.trollface {
+  background-image: url(../images/trollface.jpg);
+  background-repeat: no-repeat !important;
+  background-position: bottom right !important;
+  background-size: 50%;
+  text-align: center;
+}
+
+section.slide.apple_evil {
+  background-image: url(../images/apple_evil.png);
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+section.slide.apple_evil * {
+  color: white !important;
+  float: left;
+  text-align: left !important;
+}
+
+section.slide.sand_castle, section.slide.huge_library {
+  background-size: cover !important;
+}
+
+/* .logo h1 { */
+/*   background-color: rgba(0, 0, 0, 0.7); */
+/*   padding: 1rem !important; */
+/*   color: #eee !important; */
+/* } */
+
+section.slide.center.full-background {
+  padding: 0 !important;
+}
+
+section.slide.center.full-background h1 {
+  display: block !important;
+  margin: 30% 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  text-align: center;
+}
+
+.deck-container ul, .deck-container ol {
+  margin-left: 3em;
+}
+
+.slide {
+  width: 100% !important;
+  padding: 0 !important;
+}
