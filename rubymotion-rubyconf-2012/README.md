@@ -9,7 +9,7 @@ If you just want to view the slides, they're in `slides.html`.  If you want to r
 1. `bundle install`
 2. `guard` ...or...  `keydown slides slides.md`
 
-#### Note: For maximum viewing pleasure, install the free [Railway font](http://www.theleagueofmoveabletype.com/raleway).
+#### Note: For maximum viewing pleasure, install the free [Raleway font](http://www.theleagueofmoveabletype.com/raleway).
 
-![Railway preview](http://www.theleagueofmoveabletype.com/raleway/images/raleway-1.jpeg)
+![Raleway preview](http://www.theleagueofmoveabletype.com/raleway/images/raleway-1.jpeg)
 
